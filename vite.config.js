@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-    base: '/eleading-landing-page/',
+    base: '/Eleading-Landing-Page-Paulo/',
 })
