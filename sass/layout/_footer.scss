@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 16px;
+    background-color: v.$black;
+    width: 100%;
+    @include m.breakpoint(tablet){
+        padding: 30px 40px;
+        width: 102%;
+    }
+    @include m.breakpoint(desktop){
+        padding: 30px 150px;
+        width: 102%;
+    }
+    img{
+        filter: invert(100%);
+    }
+    ul{
+        li{
+            background: v.$gradient-blue;
+        }
+        @include m.breakpoint(desktop){
+            li:hover{
+                opacity: 0.5;
+            }
+    }
+    }
+}
